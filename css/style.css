@@ -31,11 +31,13 @@ a {
 
 main {
     background: url(../images/pattern-background-desktop.svg) no-repeat, hsl(225, 100%, 94%);
+    background-size: contain;
 }
 
 @media only screen and (max-width:375px) {
     main {
         background: url(../images/pattern-background-mobile.svg) no-repeat, hsl(225, 100%, 94%);
+        background-size: contain;
     }
 }
 
@@ -52,7 +54,6 @@ main {
     border-radius: 20px; 
     overflow: hidden;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-    margin: 30px 0;
 }
 
 @media only screen and (max-width:375px) {
@@ -132,6 +133,7 @@ main {
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
     margin-left: auto;
+    transition: color .3s;
 }
 
 .change-sub:hover {
@@ -155,6 +157,7 @@ main {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transition: background-color .3s;
 }
 
 .proceed-btn:hover {
@@ -165,6 +168,7 @@ main {
 .cancel-btn {
     font-weight: 700;
     color: hsl(224, 23%, 55%);
+    transition: color .3s;
 }
 
 .cancel-btn:hover {
